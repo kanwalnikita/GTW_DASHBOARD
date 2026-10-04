@@ -1,0 +1,2412 @@
+﻿{
+  "Scenario": "Classification",
+  "DataSource": {
+    "Type": "SQL",
+    "Version": 1,
+    "ColumnProperties": [
+      {
+        "ColumnName": "Gage_ID",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Gage_SN",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Asset_No",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Model_No",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Manufacturer",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "GM_Owner",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Description",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "GM_Type",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Unit_of_Meas",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Standard_Group",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Drawing_No",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Drawing_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Change_Level",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Change_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Storage_Location",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Current_Location",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Service_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Retirement_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibrator",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibration_Frequency",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibration_Frequency_UOM",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CyclesPerDay",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Resolution",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Operating_Range",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Plus_Tolerance",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Minus_Tolerance",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Supplier_Code",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "GM_Cost",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Purchase_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibration_Hours",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Est_Calibration_Cost",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CalibSkipDirection",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Next_Due_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Last_Calibration_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Notes",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Status",
+        "ColumnPurpose": "Label",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "User_Defined",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RefStandard",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "GM_Format",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibrated_By",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "GM_Usage",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "AdjPlanCode",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "AdjCalFreq",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "MaxAdjCalFreq",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RRFreq",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RRFreqUnits",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RRHours",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RRSkipDirection",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "LastRR",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "NextRR",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RRResult",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "LabelCode",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Uncert",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "PriorCalDate",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Nist_No",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CustomerInfo",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "CalLabelSize",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UseLeft",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UseUsed",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": false,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Calibration_Frequency_DOM",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef1",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef2",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef3",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef4",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef5",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef6",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef7",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef8",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef9",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef10",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef11",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef12",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef13",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef14",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef15",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef16",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef17",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef18",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef19",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "UserDef20",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "RestrictIssue",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Min_CalFreq",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Max_CalFreq",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "EstNext_Due_Date",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "DateTime",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "FloatFixed",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "FloatFixedRR",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "PrintIssueLabel",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "Single",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      },
+      {
+        "ColumnName": "Adjustment_Method",
+        "ColumnPurpose": "Feature",
+        "ColumnDataFormat": "String",
+        "IsCategorical": true,
+        "Type": "Column",
+        "Version": 5
+      }
+    ],
+    "ConnectionString": "Data Source=KSPL-24\\SQLEXP2017;Initial Catalog=GAGETRAK68-SAMP-DB;User ID=gagemgr65",
+    "CommandString": "SELECT CAST([Gage_ID] as NVARCHAR(MAX)), CAST([Gage_SN] as NVARCHAR(MAX)), CAST([Asset_No] as NVARCHAR(MAX)), CAST([Model_No] as NVARCHAR(MAX)), CAST([Manufacturer] as NVARCHAR(MAX)), CAST([GM_Owner] as NVARCHAR(MAX)), CAST([Description] as NVARCHAR(MAX)), CAST([GM_Type] as NVARCHAR(MAX)), CAST([Unit_of_Meas] as NVARCHAR(MAX)), CAST([Standard_Group] as NVARCHAR(MAX)), CAST([Drawing_No] as NVARCHAR(MAX)), [Drawing_Date], CAST([Change_Level] as NVARCHAR(MAX)), [Change_Date], CAST([Storage_Location] as NVARCHAR(MAX)), CAST([Current_Location] as NVARCHAR(MAX)), [Service_Date], [Retirement_Date], CAST([Calibrator] as NVARCHAR(MAX)), CAST([Calibration_Frequency] as REAL), CAST([Calibration_Frequency_UOM] as NVARCHAR(MAX)), CAST([CyclesPerDay] as REAL), CAST([Resolution] as NVARCHAR(MAX)), CAST([Operating_Range] as NVARCHAR(MAX)), CAST([Plus_Tolerance] as NVARCHAR(MAX)), CAST([Minus_Tolerance] as NVARCHAR(MAX)), CAST([Supplier_Code] as NVARCHAR(MAX)), CAST([GM_Cost] as REAL), [Purchase_Date], CAST([Calibration_Hours] as REAL), CAST([Est_Calibration_Cost] as REAL), CAST([CalibSkipDirection] as REAL), [Next_Due_Date], [Last_Calibration_Date], CAST([Notes] as NVARCHAR(MAX)), CAST([Status] as NVARCHAR(MAX)), CAST([User_Defined] as NVARCHAR(MAX)), CAST([RefStandard] as REAL), CAST([GM_Format] as NVARCHAR(MAX)), CAST([Calibrated_By] as NVARCHAR(MAX)), CAST([GM_Usage] as REAL), CAST([AdjPlanCode] as NVARCHAR(MAX)), CAST([AdjCalFreq] as REAL), CAST([MaxAdjCalFreq] as REAL), CAST([RRFreq] as REAL), CAST([RRFreqUnits] as NVARCHAR(MAX)), CAST([RRHours] as REAL), CAST([RRSkipDirection] as REAL), [LastRR], [NextRR], CAST([RRResult] as NVARCHAR(MAX)), CAST([LabelCode] as NVARCHAR(MAX)), CAST([Uncert] as REAL), [PriorCalDate], CAST([Nist_No] as NVARCHAR(MAX)), CAST([CustomerInfo] as NVARCHAR(MAX)), CAST([CalLabelSize] as NVARCHAR(MAX)), CAST([UseLeft] as REAL), CAST([UseUsed] as REAL), CAST([Calibration_Frequency_DOM] as NVARCHAR(MAX)), CAST([UserDef1] as NVARCHAR(MAX)), CAST([UserDef2] as NVARCHAR(MAX)), CAST([UserDef3] as NVARCHAR(MAX)), CAST([UserDef4] as NVARCHAR(MAX)), CAST([UserDef5] as NVARCHAR(MAX)), CAST([UserDef6] as NVARCHAR(MAX)), CAST([UserDef7] as NVARCHAR(MAX)), CAST([UserDef8] as NVARCHAR(MAX)), CAST([UserDef9] as NVARCHAR(MAX)), CAST([UserDef10] as NVARCHAR(MAX)), CAST([UserDef11] as NVARCHAR(MAX)), CAST([UserDef12] as NVARCHAR(MAX)), CAST([UserDef13] as NVARCHAR(MAX)), CAST([UserDef14] as NVARCHAR(MAX)), CAST([UserDef15] as NVARCHAR(MAX)), CAST([UserDef16] as NVARCHAR(MAX)), CAST([UserDef17] as NVARCHAR(MAX)), CAST([UserDef18] as NVARCHAR(MAX)), CAST([UserDef19] as NVARCHAR(MAX)), CAST([UserDef20] as NVARCHAR(MAX)), CAST([RestrictIssue] as REAL), CAST([Min_CalFreq] as REAL), CAST([Max_CalFreq] as REAL), [EstNext_Due_Date], CAST([FloatFixed] as REAL), CAST([FloatFixedRR] as REAL), CAST([PrintIssueLabel] as REAL), CAST([Adjustment_Method] as NVARCHAR(MAX)) FROM [GAGEMGR65].[Gage_Master]",
+    "DatabaseName": "GAGETRAK68-SAMP-DB",
+    "SelectedTableDbo": "GAGEMGR65",
+    "TableName": "Gage_Master"
+  },
+  "Environment": {
+    "Type": "LocalCPU",
+    "Version": 1
+  },
+  "RunHistory": {
+    "Version": 3,
+    "Type": "Result",
+    "Trials": [
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastForestOva",
+        "Score": 0.29348965848965852,
+        "RuntimeInSeconds": 13.122,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * e22 * e28",
+          "e0": {
+            "OutputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ],
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ],
+            "InputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ]
+          },
+          "e10": {
+            "InputColumnName": "Calibrator",
+            "OutputColumnName": "Calibrator"
+          },
+          "e11": {
+            "InputColumnName": "Calibration_Frequency_UOM",
+            "OutputColumnName": "Calibration_Frequency_UOM"
+          },
+          "e12": {
+            "InputColumnName": "Resolution",
+            "OutputColumnName": "Resolution"
+          },
+          "e13": {
+            "InputColumnName": "Plus_Tolerance",
+            "OutputColumnName": "Plus_Tolerance"
+          },
+          "e14": {
+            "InputColumnName": "Minus_Tolerance",
+            "OutputColumnName": "Minus_Tolerance"
+          },
+          "e15": {
+            "InputColumnName": "User_Defined",
+            "OutputColumnName": "User_Defined"
+          },
+          "e16": {
+            "InputColumnName": "Calibrated_By",
+            "OutputColumnName": "Calibrated_By"
+          },
+          "e17": {
+            "InputColumnName": "RRResult",
+            "OutputColumnName": "RRResult"
+          },
+          "e18": {
+            "OutputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "InputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "TargetType": "Single"
+          },
+          "e19": {
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method",
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel",
+              "Gage_ID",
+              "Model_No",
+              "Manufacturer",
+              "Description",
+              "GM_Type",
+              "Unit_of_Meas",
+              "Storage_Location",
+              "Current_Location",
+              "Calibrator",
+              "Calibration_Frequency_UOM",
+              "Resolution",
+              "Plus_Tolerance",
+              "Minus_Tolerance",
+              "User_Defined",
+              "Calibrated_By",
+              "RRResult",
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "InputColumnName": "Gage_ID",
+            "OutputColumnName": "Gage_ID"
+          },
+          "e20": {
+            "OutputColumnName": "Status",
+            "InputColumnName": "Status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e22": {
+            "NumberOfTrees": 4,
+            "NumberOfLeaves": 4,
+            "FeatureFraction": 1.0,
+            "LabelColumnName": "Status",
+            "FeatureColumnName": "Features"
+          },
+          "e28": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e3": {
+            "InputColumnName": "Model_No",
+            "OutputColumnName": "Model_No"
+          },
+          "e4": {
+            "InputColumnName": "Manufacturer",
+            "OutputColumnName": "Manufacturer"
+          },
+          "e5": {
+            "InputColumnName": "Description",
+            "OutputColumnName": "Description"
+          },
+          "e6": {
+            "InputColumnName": "GM_Type",
+            "OutputColumnName": "GM_Type"
+          },
+          "e7": {
+            "InputColumnName": "Unit_of_Meas",
+            "OutputColumnName": "Unit_of_Meas"
+          },
+          "e8": {
+            "InputColumnName": "Storage_Location",
+            "OutputColumnName": "Storage_Location"
+          },
+          "e9": {
+            "InputColumnName": "Current_Location",
+            "OutputColumnName": "Current_Location"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "LbfgsMaximumEntropyMulti",
+        "Score": 0.25064790764790768,
+        "RuntimeInSeconds": 9.818,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * e25 * e28",
+          "e0": {
+            "OutputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ],
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ],
+            "InputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ]
+          },
+          "e10": {
+            "InputColumnName": "Calibrator",
+            "OutputColumnName": "Calibrator"
+          },
+          "e11": {
+            "InputColumnName": "Calibration_Frequency_UOM",
+            "OutputColumnName": "Calibration_Frequency_UOM"
+          },
+          "e12": {
+            "InputColumnName": "Resolution",
+            "OutputColumnName": "Resolution"
+          },
+          "e13": {
+            "InputColumnName": "Plus_Tolerance",
+            "OutputColumnName": "Plus_Tolerance"
+          },
+          "e14": {
+            "InputColumnName": "Minus_Tolerance",
+            "OutputColumnName": "Minus_Tolerance"
+          },
+          "e15": {
+            "InputColumnName": "User_Defined",
+            "OutputColumnName": "User_Defined"
+          },
+          "e16": {
+            "InputColumnName": "Calibrated_By",
+            "OutputColumnName": "Calibrated_By"
+          },
+          "e17": {
+            "InputColumnName": "RRResult",
+            "OutputColumnName": "RRResult"
+          },
+          "e18": {
+            "OutputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "InputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "TargetType": "Single"
+          },
+          "e19": {
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method",
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel",
+              "Gage_ID",
+              "Model_No",
+              "Manufacturer",
+              "Description",
+              "GM_Type",
+              "Unit_of_Meas",
+              "Storage_Location",
+              "Current_Location",
+              "Calibrator",
+              "Calibration_Frequency_UOM",
+              "Resolution",
+              "Plus_Tolerance",
+              "Minus_Tolerance",
+              "User_Defined",
+              "Calibrated_By",
+              "RRResult",
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "InputColumnName": "Gage_ID",
+            "OutputColumnName": "Gage_ID"
+          },
+          "e20": {
+            "OutputColumnName": "Status",
+            "InputColumnName": "Status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e25": {
+            "L1Regularization": 1.0,
+            "L2Regularization": 1.0,
+            "LabelColumnName": "Status",
+            "FeatureColumnName": "Features"
+          },
+          "e28": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e3": {
+            "InputColumnName": "Model_No",
+            "OutputColumnName": "Model_No"
+          },
+          "e4": {
+            "InputColumnName": "Manufacturer",
+            "OutputColumnName": "Manufacturer"
+          },
+          "e5": {
+            "InputColumnName": "Description",
+            "OutputColumnName": "Description"
+          },
+          "e6": {
+            "InputColumnName": "GM_Type",
+            "OutputColumnName": "GM_Type"
+          },
+          "e7": {
+            "InputColumnName": "Unit_of_Meas",
+            "OutputColumnName": "Unit_of_Meas"
+          },
+          "e8": {
+            "InputColumnName": "Storage_Location",
+            "OutputColumnName": "Storage_Location"
+          },
+          "e9": {
+            "InputColumnName": "Current_Location",
+            "OutputColumnName": "Current_Location"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.18,
+        "RuntimeInSeconds": 12.214,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * e21 * e28",
+          "e0": {
+            "OutputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ],
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ],
+            "InputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ]
+          },
+          "e10": {
+            "InputColumnName": "Calibrator",
+            "OutputColumnName": "Calibrator"
+          },
+          "e11": {
+            "InputColumnName": "Calibration_Frequency_UOM",
+            "OutputColumnName": "Calibration_Frequency_UOM"
+          },
+          "e12": {
+            "InputColumnName": "Resolution",
+            "OutputColumnName": "Resolution"
+          },
+          "e13": {
+            "InputColumnName": "Plus_Tolerance",
+            "OutputColumnName": "Plus_Tolerance"
+          },
+          "e14": {
+            "InputColumnName": "Minus_Tolerance",
+            "OutputColumnName": "Minus_Tolerance"
+          },
+          "e15": {
+            "InputColumnName": "User_Defined",
+            "OutputColumnName": "User_Defined"
+          },
+          "e16": {
+            "InputColumnName": "Calibrated_By",
+            "OutputColumnName": "Calibrated_By"
+          },
+          "e17": {
+            "InputColumnName": "RRResult",
+            "OutputColumnName": "RRResult"
+          },
+          "e18": {
+            "OutputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "InputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "TargetType": "Single"
+          },
+          "e19": {
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method",
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel",
+              "Gage_ID",
+              "Model_No",
+              "Manufacturer",
+              "Description",
+              "GM_Type",
+              "Unit_of_Meas",
+              "Storage_Location",
+              "Current_Location",
+              "Calibrator",
+              "Calibration_Frequency_UOM",
+              "Resolution",
+              "Plus_Tolerance",
+              "Minus_Tolerance",
+              "User_Defined",
+              "Calibrated_By",
+              "RRResult",
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "InputColumnName": "Gage_ID",
+            "OutputColumnName": "Gage_ID"
+          },
+          "e20": {
+            "OutputColumnName": "Status",
+            "InputColumnName": "Status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e21": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 22,
+            "NumberOfTrees": 8,
+            "MaximumBinCountPerFeature": 446,
+            "FeatureFraction": 0.99081334055356385,
+            "LearningRate": 0.26904495578455911,
+            "LabelColumnName": "Status",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e28": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e3": {
+            "InputColumnName": "Model_No",
+            "OutputColumnName": "Model_No"
+          },
+          "e4": {
+            "InputColumnName": "Manufacturer",
+            "OutputColumnName": "Manufacturer"
+          },
+          "e5": {
+            "InputColumnName": "Description",
+            "OutputColumnName": "Description"
+          },
+          "e6": {
+            "InputColumnName": "GM_Type",
+            "OutputColumnName": "GM_Type"
+          },
+          "e7": {
+            "InputColumnName": "Unit_of_Meas",
+            "OutputColumnName": "Unit_of_Meas"
+          },
+          "e8": {
+            "InputColumnName": "Storage_Location",
+            "OutputColumnName": "Storage_Location"
+          },
+          "e9": {
+            "InputColumnName": "Current_Location",
+            "OutputColumnName": "Current_Location"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.17683982683982685,
+        "RuntimeInSeconds": 11.397,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * e21 * e28",
+          "e0": {
+            "OutputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ],
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ],
+            "InputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ]
+          },
+          "e10": {
+            "InputColumnName": "Calibrator",
+            "OutputColumnName": "Calibrator"
+          },
+          "e11": {
+            "InputColumnName": "Calibration_Frequency_UOM",
+            "OutputColumnName": "Calibration_Frequency_UOM"
+          },
+          "e12": {
+            "InputColumnName": "Resolution",
+            "OutputColumnName": "Resolution"
+          },
+          "e13": {
+            "InputColumnName": "Plus_Tolerance",
+            "OutputColumnName": "Plus_Tolerance"
+          },
+          "e14": {
+            "InputColumnName": "Minus_Tolerance",
+            "OutputColumnName": "Minus_Tolerance"
+          },
+          "e15": {
+            "InputColumnName": "User_Defined",
+            "OutputColumnName": "User_Defined"
+          },
+          "e16": {
+            "InputColumnName": "Calibrated_By",
+            "OutputColumnName": "Calibrated_By"
+          },
+          "e17": {
+            "InputColumnName": "RRResult",
+            "OutputColumnName": "RRResult"
+          },
+          "e18": {
+            "OutputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "InputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "TargetType": "Single"
+          },
+          "e19": {
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method",
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel",
+              "Gage_ID",
+              "Model_No",
+              "Manufacturer",
+              "Description",
+              "GM_Type",
+              "Unit_of_Meas",
+              "Storage_Location",
+              "Current_Location",
+              "Calibrator",
+              "Calibration_Frequency_UOM",
+              "Resolution",
+              "Plus_Tolerance",
+              "Minus_Tolerance",
+              "User_Defined",
+              "Calibrated_By",
+              "RRResult",
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "InputColumnName": "Gage_ID",
+            "OutputColumnName": "Gage_ID"
+          },
+          "e20": {
+            "OutputColumnName": "Status",
+            "InputColumnName": "Status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e21": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 15,
+            "NumberOfTrees": 6,
+            "MaximumBinCountPerFeature": 297,
+            "FeatureFraction": 0.96017062210982784,
+            "LearningRate": 0.12024044207459894,
+            "LabelColumnName": "Status",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e28": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e3": {
+            "InputColumnName": "Model_No",
+            "OutputColumnName": "Model_No"
+          },
+          "e4": {
+            "InputColumnName": "Manufacturer",
+            "OutputColumnName": "Manufacturer"
+          },
+          "e5": {
+            "InputColumnName": "Description",
+            "OutputColumnName": "Description"
+          },
+          "e6": {
+            "InputColumnName": "GM_Type",
+            "OutputColumnName": "GM_Type"
+          },
+          "e7": {
+            "InputColumnName": "Unit_of_Meas",
+            "OutputColumnName": "Unit_of_Meas"
+          },
+          "e8": {
+            "InputColumnName": "Storage_Location",
+            "OutputColumnName": "Storage_Location"
+          },
+          "e9": {
+            "InputColumnName": "Current_Location",
+            "OutputColumnName": "Current_Location"
+          }
+        }
+      },
+      {
+        "Version": 1,
+        "Type": "Trial",
+        "TrainerName": "FastTreeOva",
+        "Score": 0.14969696969696969,
+        "RuntimeInSeconds": 11.02,
+        "Parameter": {
+          "_SCHEMA_": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * e21 * e28",
+          "e0": {
+            "OutputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ],
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method"
+            ]
+          },
+          "e1": {
+            "OutputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ],
+            "InputColumnNames": [
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel"
+            ]
+          },
+          "e10": {
+            "InputColumnName": "Calibrator",
+            "OutputColumnName": "Calibrator"
+          },
+          "e11": {
+            "InputColumnName": "Calibration_Frequency_UOM",
+            "OutputColumnName": "Calibration_Frequency_UOM"
+          },
+          "e12": {
+            "InputColumnName": "Resolution",
+            "OutputColumnName": "Resolution"
+          },
+          "e13": {
+            "InputColumnName": "Plus_Tolerance",
+            "OutputColumnName": "Plus_Tolerance"
+          },
+          "e14": {
+            "InputColumnName": "Minus_Tolerance",
+            "OutputColumnName": "Minus_Tolerance"
+          },
+          "e15": {
+            "InputColumnName": "User_Defined",
+            "OutputColumnName": "User_Defined"
+          },
+          "e16": {
+            "InputColumnName": "Calibrated_By",
+            "OutputColumnName": "Calibrated_By"
+          },
+          "e17": {
+            "InputColumnName": "RRResult",
+            "OutputColumnName": "RRResult"
+          },
+          "e18": {
+            "OutputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "InputColumnNames": [
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "TargetType": "Single"
+          },
+          "e19": {
+            "InputColumnNames": [
+              "Gage_SN",
+              "Asset_No",
+              "GM_Owner",
+              "Standard_Group",
+              "Drawing_No",
+              "Change_Level",
+              "Operating_Range",
+              "Supplier_Code",
+              "Notes",
+              "GM_Format",
+              "AdjPlanCode",
+              "RRFreqUnits",
+              "LabelCode",
+              "Nist_No",
+              "CustomerInfo",
+              "CalLabelSize",
+              "Calibration_Frequency_DOM",
+              "UserDef1",
+              "UserDef2",
+              "UserDef3",
+              "UserDef4",
+              "UserDef5",
+              "UserDef6",
+              "UserDef7",
+              "UserDef8",
+              "UserDef9",
+              "UserDef10",
+              "UserDef11",
+              "UserDef12",
+              "UserDef13",
+              "UserDef14",
+              "UserDef15",
+              "UserDef16",
+              "UserDef17",
+              "UserDef18",
+              "UserDef19",
+              "UserDef20",
+              "Adjustment_Method",
+              "Calibration_Frequency",
+              "CyclesPerDay",
+              "GM_Cost",
+              "Calibration_Hours",
+              "Est_Calibration_Cost",
+              "CalibSkipDirection",
+              "RefStandard",
+              "GM_Usage",
+              "AdjCalFreq",
+              "MaxAdjCalFreq",
+              "RRFreq",
+              "RRHours",
+              "RRSkipDirection",
+              "Uncert",
+              "UseLeft",
+              "UseUsed",
+              "RestrictIssue",
+              "Min_CalFreq",
+              "Max_CalFreq",
+              "FloatFixed",
+              "FloatFixedRR",
+              "PrintIssueLabel",
+              "Gage_ID",
+              "Model_No",
+              "Manufacturer",
+              "Description",
+              "GM_Type",
+              "Unit_of_Meas",
+              "Storage_Location",
+              "Current_Location",
+              "Calibrator",
+              "Calibration_Frequency_UOM",
+              "Resolution",
+              "Plus_Tolerance",
+              "Minus_Tolerance",
+              "User_Defined",
+              "Calibrated_By",
+              "RRResult",
+              "Service_Date",
+              "Purchase_Date",
+              "Next_Due_Date",
+              "Last_Calibration_Date",
+              "LastRR"
+            ],
+            "OutputColumnName": "Features"
+          },
+          "e2": {
+            "InputColumnName": "Gage_ID",
+            "OutputColumnName": "Gage_ID"
+          },
+          "e20": {
+            "OutputColumnName": "Status",
+            "InputColumnName": "Status",
+            "AddKeyValueAnnotationsAsText": false
+          },
+          "e21": {
+            "NumberOfLeaves": 4,
+            "MinimumExampleCountPerLeaf": 20,
+            "NumberOfTrees": 4,
+            "MaximumBinCountPerFeature": 254,
+            "FeatureFraction": 1.0,
+            "LearningRate": 0.099999999999999978,
+            "LabelColumnName": "Status",
+            "FeatureColumnName": "Features",
+            "DiskTranspose": false
+          },
+          "e28": {
+            "OutputColumnName": "PredictedLabel",
+            "InputColumnName": "PredictedLabel"
+          },
+          "e3": {
+            "InputColumnName": "Model_No",
+            "OutputColumnName": "Model_No"
+          },
+          "e4": {
+            "InputColumnName": "Manufacturer",
+            "OutputColumnName": "Manufacturer"
+          },
+          "e5": {
+            "InputColumnName": "Description",
+            "OutputColumnName": "Description"
+          },
+          "e6": {
+            "InputColumnName": "GM_Type",
+            "OutputColumnName": "GM_Type"
+          },
+          "e7": {
+            "InputColumnName": "Unit_of_Meas",
+            "OutputColumnName": "Unit_of_Meas"
+          },
+          "e8": {
+            "InputColumnName": "Storage_Location",
+            "OutputColumnName": "Storage_Location"
+          },
+          "e9": {
+            "InputColumnName": "Current_Location",
+            "OutputColumnName": "Current_Location"
+          }
+        }
+      }
+    ],
+    "Estimators": {
+      "e0": "OneHotEncoding",
+      "e1": "ReplaceMissingValues",
+      "e2": "FeaturizeText",
+      "e3": "FeaturizeText",
+      "e4": "FeaturizeText",
+      "e5": "FeaturizeText",
+      "e6": "FeaturizeText",
+      "e7": "FeaturizeText",
+      "e8": "FeaturizeText",
+      "e9": "FeaturizeText",
+      "e10": "FeaturizeText",
+      "e11": "FeaturizeText",
+      "e12": "FeaturizeText",
+      "e13": "FeaturizeText",
+      "e14": "FeaturizeText",
+      "e15": "FeaturizeText",
+      "e16": "FeaturizeText",
+      "e17": "FeaturizeText",
+      "e18": "ConvertType",
+      "e19": "Concatenate",
+      "e20": "MapValueToKey",
+      "e21": "FastTreeOva",
+      "e22": "FastForestOva",
+      "e23": "LightGbmMulti",
+      "e24": "LbfgsLogisticRegressionOva",
+      "e25": "LbfgsMaximumEntropyMulti",
+      "e26": "SdcaMaximumEntropyMulti",
+      "e27": "SdcaLogisticRegressionOva",
+      "e28": "MapKeyToValue"
+    },
+    "Schema": "e0 * e1 * e2 * e3 * e4 * e5 * e6 * e7 * e8 * e9 * e10 * e11 * e12 * e13 * e14 * e15 * e16 * e17 * e18 * e19 * e20 * (e21 + e22 + e23 + e24 + e25 + e26 + e27) * e28",
+    "MetricName": "MacroAccuracy",
+    "ModelFilePath": "C:\\Users\\adwait.hatkar\\source\\repos\\GAGEtrak_WebReports\\MLModel1.mlnet"
+  },
+  "Type": "TrainingConfig",
+  "Version": 5,
+  "TrainingOption": {
+    "Version": 2,
+    "Subsampling": false,
+    "Type": "ClassificationTrainingOption",
+    "TrainingTime": 60,
+    "LabelColumn": "Status",
+    "ValidationOption": {
+      "Version": 0,
+      "Type": "CrossValidationValidationOption",
+      "NumberOfFolds": 5
+    }
+  }
+}

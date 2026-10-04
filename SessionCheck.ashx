@@ -1,0 +1,1 @@
+﻿<%@ WebHandler Language="C#" CodeBehind="SessionCheck.ashx.cs" Class="GAGEtrak_WebReports.SessionCheck" %>

@@ -1,0 +1,32 @@
+button {
+	font-size:14px;
+	line-height:18px;
+	padding:5px 10px;
+	background-color:#003849;
+	color:#FFF;
+	border-radius:4px;
+	border:none;
+	transition:background-color 0.1s ease-in-out;
+	cursor:pointer;
+}
+button:hover {
+	background-color:#004C63;
+}
+button:active {
+	outline:none;
+	background-color:#002430;
+}
+button:focus {
+	outline:none;
+}
+#output {
+	background-color:#F0F0F0;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+#output.active {
+	padding:10px;
+}
+#reset {
+	display:none;
+}
